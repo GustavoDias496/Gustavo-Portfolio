@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    min-height: 100%;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    max-width: 1440px;
+    position: fixed;
+    /*background: linear-gradient(rgba(0,0,0,0.7), transparent);*/
+    background-color: #5F4AD4;
+    text-align: right;
+}
+
+nav ul{
+    display: grid;
+    grid-template-areas: 
+    "logo inicio sobre projetos habilidades";
+    padding-right: 30px;
+}
+
+.logo{
+    grid-area: logo;
+    padding-top: 5px;
+    padding-right: 500px;
+}
+
+.incio{
+    grid-area: inicio;
+    padding: 20px;
+}
+
+.projetos{
+    grid-area: projetos;
+}
+
+.sobre{
+    grid-area: sobre;
+}
+
+.habilidade{
+    grid-area: habilidade;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 5px 0px;
+    display: inline-block;
+    margin: 15px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid #FFFFFF;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+
+}
+
+section h1{
+    font-size: 70px;
+    color: black;
+}
+
+section:nth-of-type(1){
+    background-image: url("./Desktop\ -\ 1.svg");
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.texto-apresentacao p{
+    font-size: 45px;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 2em;
+}
+
+section:nth-of-type(2){
+    background-image: url("./Desktop\ -\ 1.svg");
+    padding-left: 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-sobre{
+    padding-top: 6em;
+    padding-bottom: 1em;
+    padding-left: 24vw; 
+}
+
+.img-sobre img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.texto-sobre{
+    align-items: center;
+}
+
+.texto-sobre p{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    text-align: center;
+    padding-right: 7em;
+}
+
+section:nth-of-type(3){
+    background-color: #05A2FC;
+}
+
+.container-projetos{
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /*padding-top: 120px;*/
+    margin: 0 auto;
+
+    display: grid;
+    grid-gap: 15px;
+    row-gap: 2px;
+    grid-template-areas: 
+    "item item item"
+    "item item item";
+}
+
+.title-projetos{
+    visibility: hidden;
+}
+
+.item{
+    width: 200px;
+    height: 150px;
+    background-color: #5F4AD4;
+    border-radius: 15px;
+    grid-area: "item";
+    text-align: center;
+    justify-items: center;
+}
+
+.item img{
+    padding-top: 20px;
+    height: 100px;
+    width: 120px;
+}
+
+.item p{
+    padding-top: 8px;
+    color: #75C7FB; 
+    font-family: 'Helvetica';   
+    font-weight: bold;
+    font-size: 25px;
+}
+
+section:nth-of-type(4){
+    background-color: #05A2FC;
+}
+
+.container-habilidades{
+    margin: 0 auto;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "html css js react"
+    "node java c react"
+    "figma photoshop git ingles";
+    align-items: center;
+    padding: 30px;
+}
+
+.box{
+    width: 200px;
+    height: 130px;
+    background-color: #5F4AD4;
+    border-radius: 15px;
+    text-align: center;
+    justify-items: center;
+}
+
+.box p{
+    padding-top: 8px;
+    color: #75C7FB; 
+    font-family: 'Helvetica';   
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.box img{
+    padding-top: 20px;
+    height: 80px;
+    width: 100px;
+}
+
+.box-ingles{
+    width: 200px;
+    height: 130px;
+    background-color: #5F4AD4;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.box-ingles p{
+    padding-top: 8px;
+    color: #75C7FB; 
+    font-family: 'Helvetica';   
+    font-weight: bold;
+    font-size: 22px;
+}
+
+footer{
+    background-color: #5F4AD4;
+    width: 100%;
+    max-width: 1440px;
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Helvetica';
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+
+}
+
+.contato{
+    padding-left: 3em;
+}
+
+.redes-sociais{
+    padding-right: 3em;
+}
+
+.redes-sociais img{
+    padding: 0 0 0 10px;
+}
