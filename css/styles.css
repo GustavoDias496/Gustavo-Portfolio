@@ -1657,3 +1657,9 @@ footer{
         padding: 0 0 0 10px;
     }
 }
+
+@media  (min-width: 420px) and (max-width: 480px){
+    .container-habilidades{
+        padding-top: 2em;
+    }
+}
